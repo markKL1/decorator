@@ -1,4 +1,4 @@
-package src.main.java.decorator.price.utils;
+package decorator.price.utils;
 
 import com.sun.istack.internal.NotNull;
 

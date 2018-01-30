@@ -1,4 +1,4 @@
-package src.main.java.decorator.shared;
+package decorator.whyuse.shared;
 
 import java.io.File;
 import java.io.FileNotFoundException;

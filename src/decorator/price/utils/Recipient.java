@@ -1,4 +1,4 @@
-package src.main.java.decorator.price.utils;
+package decorator.price.utils;
 
 public class Recipient {
     final private Name name;

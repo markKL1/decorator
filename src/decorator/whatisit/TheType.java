@@ -1,4 +1,4 @@
-package src.main.java.decorator.whatisit;
+package decorator.whatisit;
 
 public interface TheType {
     public void doTheOperation();

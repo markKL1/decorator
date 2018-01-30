@@ -1,4 +1,4 @@
-package src.main.java.decorator.price;
+package decorator.price;
 
 import java.util.Optional;
 

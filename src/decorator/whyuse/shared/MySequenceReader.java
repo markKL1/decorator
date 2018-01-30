@@ -1,4 +1,4 @@
-package src.main.java.decorator.shared;
+package decorator.whyuse.shared;
 
 public class MySequenceReader implements MyReader {
 

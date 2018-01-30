@@ -1,4 +1,4 @@
-package src.main.java.decorator.whatisit;
+package decorator.whatisit;
 
 public class TopClass implements TheType {
     @Override public void doTheOperation() {

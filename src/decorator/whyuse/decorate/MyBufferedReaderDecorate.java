@@ -1,9 +1,9 @@
-package src.main.java.decorator.whyuse.decorate.delegation;
+package decorator.whyuse.decorate;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import decorator.shared.MyReader;
+import decorator.whyuse.shared.MyReader;
 
 public class MyBufferedReaderDecorate implements MyReader {
 

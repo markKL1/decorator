@@ -1,12 +1,12 @@
-package src.main.java.decorator.whyuse.inheritance;
+package decorator.whyuse.inheritance;
 
 import java.io.File;
 
-import decorator.shared.Utils;
+import decorator.whyuse.shared.Utils;
 
 public class DemoInheritance {
     public static void main(String[] args) {
-        MyBufferedReaderInheritance rdr = new MyBufferedReaderInheritance(new File("shared/demo.txt"));
+        MyBufferedReaderInheritance rdr = new MyBufferedReaderInheritance(new File("demo.txt"));
         for (int k = 0; k < 250; k++) {
             System.out.println(k + ": " + rdr.readLine());
         }
