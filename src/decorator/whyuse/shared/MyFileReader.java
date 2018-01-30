@@ -7,15 +7,15 @@ import java.util.Scanner;
 
 public class MyFileReader implements MyReader {
 
-    private Scanner youDoAllTheWorkOk;
-    private File file;
+    final private Scanner youDoAllTheWorkOk;
+    final private File file;
 
     public MyFileReader(File in) {
-
+        this.file = in;
         try {
             youDoAllTheWorkOk = new Scanner(new FileReader(in));
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            throw new IllegalStateException("Couldn't open file");
         }
     }
 
