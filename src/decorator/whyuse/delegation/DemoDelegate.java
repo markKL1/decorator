@@ -8,7 +8,7 @@ import decorator.whyuse.shared.MySequenceReader;
 
 public class DemoDelegate {
     public static void main(String[] args) {
-        decorator.whyuse.inkotlin.MyBufferedReaderKotlin rdr = new decorator.whyuse.inkotlin.MyBufferedReaderKotlin(new MyFileReader(new File("demo.txt")));
+        MyBufferedReaderKotlin rdr = new MyBufferedReaderKotlin(new MyFileReader(new File("demo.txt")));
         for (int k = 0; k < 250; k++) {
             System.out.println(k + ": " + rdr.readLine());
         }
@@ -16,6 +16,6 @@ public class DemoDelegate {
         // It also works for other readers!
         decorator.whyuse.inkotlin.MyBufferedReaderKotlin seqrdr = new MyBufferedReaderKotlin(new MySequenceReader());
         // But this doesn't work (not polymorphic)...
-        // Utils.functionForMyReaders(rdr);
+//        Utils.functionForMyReaders(rdr);
     }
 }

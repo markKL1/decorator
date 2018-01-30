@@ -13,7 +13,7 @@ public class DemoInheritance {
         System.out.println("Those were the first 250 lines of " + rdr.getSourceName());
         Utils.functionForMyReaders(rdr);
         // But what if we have a network reader...?
-        // new MyBufferedSequenceReader(new File("shared/demo.txt"))
+//         new MyBufferedSequenceReader(new File("demo.txt"));
     }
 }
 
