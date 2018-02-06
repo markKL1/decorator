@@ -12,7 +12,7 @@ import decorator.whyuse.shared.MyReader;
 public class MyMaybeBufferedReaderImperative implements MyReader {
 
     final private Queue<String> lines = new LinkedList<String>();
-    private final Scanner youDoAllTheWorkOk;
+    private final Scanner scanner;
     private final File file;
     private final boolean isBuffered;
 
@@ -20,7 +20,7 @@ public class MyMaybeBufferedReaderImperative implements MyReader {
         this.isBuffered = buffered;
         this.file = in;
         try {
-            youDoAllTheWorkOk = new Scanner(new FileReader(in));
+            scanner = new Scanner(new FileReader(in));
         } catch (FileNotFoundException e) {
             throw new IllegalStateException("Couldn't open file");
         }
@@ -34,10 +34,10 @@ public class MyMaybeBufferedReaderImperative implements MyReader {
         if (lines.size() == 0) {
             if (isBuffered) {
                 for (int k = 0; k < 100; k++) {
-                    lines.add(youDoAllTheWorkOk.nextLine());
+                    lines.add(scanner.nextLine());
                 }
             } else {
-                lines.add(youDoAllTheWorkOk.nextLine());
+                lines.add(scanner.nextLine());
             }
         }
         return lines.remove();

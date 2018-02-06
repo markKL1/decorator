@@ -14,7 +14,7 @@ public class DemoDelegate {
         }
         System.out.println("Those were the first 250 lines of " + rdr.getSourceName());
         // It also works for other readers!
-        decorator.whyuse.inkotlin.MyBufferedReaderKotlin seqrdr = new MyBufferedReaderKotlin(new MySequenceReader());
+        MyBufferedReaderKotlin seqrdr = new MyBufferedReaderKotlin(new MySequenceReader());
         // But this doesn't work (not polymorphic)...
 //        Utils.functionForMyReaders(rdr);
     }
